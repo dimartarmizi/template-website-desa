@@ -39,6 +39,7 @@ template-website-desa/
 ## Lisensi
 Lihat file [LICENSE](LICENSE) untuk detail lisensi.
 
----
-
-Website ini dapat dikembangkan lebih lanjut sesuai kebutuhan desa Anda.
+## Kredit
+- Desain menggunakan [Tailwind CSS](https://tailwindcss.com/)
+- Font oleh [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
+- Gambar dan foto oleh [Unsplash](https://unsplash.com/).
