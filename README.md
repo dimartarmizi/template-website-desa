@@ -15,15 +15,20 @@ Demo website ini menampilkan tampilan dan fitur utama Template Website Desa seca
 - Struktur mudah dikustomisasi
 
 ## Struktur Folder
-- `index.html` — Beranda
-- `profil.html` — Profil Desa
-- `pemerintahan.html` — Pemerintahan Desa
-- `layanan-publik.html` — Layanan Publik
-- `berita-pengumuman.html` — Berita & Pengumuman
-- `galeri.html` — Galeri Foto/Video
-- `kontak.html` — Kontak & Lokasi
-- `script.js` — Script interaktif (menu, dsb)
-- `style.css` — Kustomisasi CSS tambahan
+```
+template-website-desa/
+├── berita-detail.html
+├── berita-pengumuman.html
+├── galeri.html
+├── index.html
+├── kontak.html
+├── layanan-publik.html
+├── pemerintahan.html
+├── pengumuman-detail.html
+├── profil.html
+├── script.js
+├── style.css
+```
 
 ## Cara Pakai
 1. Download atau clone repository ini.
