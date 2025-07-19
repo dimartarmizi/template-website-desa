@@ -21,7 +21,14 @@
                     <p class="text-sm text-gray-500">Bersama membangun desa yang mandiri dan sejahtera</p>
                 </div>
             </div>
-            <nav class="hidden md:flex gap-6">
+            <!-- Hamburger button for mobile/tablet -->
+            <button id="menu-toggle" class="lg:hidden flex items-center px-3 py-2 border rounded text-green-700 border-green-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex gap-6">
                 <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
                 <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
                 <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
@@ -31,6 +38,23 @@
                 <a href="kontak.html" class="hover:text-green-600 font-medium">Kontak</a>
             </nav>
         </div>
+        <!-- Mobile/Tablet Navigation -->
+        <nav id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 hidden">
+            <div class="bg-white w-4/5 max-w-xs h-full shadow-lg p-6 flex flex-col gap-4 animate-slideInLeft">
+                <button id="menu-close" class="self-end mb-4 text-gray-700" aria-label="Tutup Menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium">Kontak</a>
+            </div>
+        </nav>
     </header>
 
     <!-- Layanan Publik -->
@@ -71,7 +95,7 @@
 
     <!-- Footer -->
     <footer class="bg-green-700 text-white py-6 mt-8">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
             <div class="flex items-center space-x-2 mb-2 md:mb-0">
                 <img src="https://placehold.co/32x32" alt="Logo Pemda" class="h-8 w-8 rounded-full">
                 <span class="font-semibold">Pemerintah Kabupaten [Y]</span>
