@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Desa | Desa [Nama Desa]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center space-x-3">
+        <img src="https://placehold.co/48x48" alt="Logo Desa" class="h-12 w-12 rounded-full">
+        <div>
+          <h1 class="text-xl font-bold">Desa [Nama Desa]</h1>
+          <p class="text-sm text-gray-500">Bersama membangun desa yang mandiri dan sejahtera</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html#beranda" class="hover:text-green-600 font-medium">Beranda</a>
+        <a href="profil.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Profil Desa</a>
+        <a href="index.html#pemerintahan" class="hover:text-green-600 font-medium">Pemerintahan</a>
+        <a href="index.html#layanan" class="hover:text-green-600 font-medium">Layanan Publik</a>
+        <a href="index.html#berita" class="hover:text-green-600 font-medium">Berita & Pengumuman</a>
+        <a href="index.html#galeri" class="hover:text-green-600 font-medium">Galeri</a>
+        <a href="index.html#kontak" class="hover:text-green-600 font-medium">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Profil Desa -->
+  <main class="container mx-auto py-12 px-4 flex-1">
+    <h2 class="text-3xl font-bold mb-2 text-green-700">Profil Desa [Nama Desa]</h2>
+    <p class="text-gray-500 mb-6 text-base">Informasi lengkap tentang sejarah, visi misi, dan data singkat Desa [Nama Desa].</p>
+    <div class="md:flex md:space-x-8 mb-8">
+      <img src="https://placehold.co/400x250" alt="Peta Desa" class="rounded-lg shadow mb-6 md:mb-0">
+      <div>
+        <h3 class="text-2xl font-semibold mb-2">Tentang Desa</h3>
+        <p class="mb-2">Desa [Nama Desa] terletak di Kecamatan [X], Kabupaten [Y]. Memiliki jumlah penduduk sekitar [xxxx] jiwa. Potensi ekonomi desa meliputi pertanian, UMKM, dan pariwisata budaya yang berkembang.</p>
+        <p class="mb-2">Desa kami berkomitmen untuk membangun masyarakat yang mandiri, sejahtera, dan berdaya saing melalui berbagai program pembangunan dan pemberdayaan.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Visi</h4>
+        <p class="mb-4 italic">"Mewujudkan Desa [Nama Desa] yang mandiri, sejahtera, dan berbudaya berbasis partisipasi masyarakat."</p>
+        <h4 class="text-xl font-semibold mb-2">Misi</h4>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Meningkatkan kualitas pendidikan dan kesehatan masyarakat.</li>
+          <li>Mendorong pertumbuhan ekonomi berbasis potensi lokal.</li>
+          <li>Melestarikan budaya dan lingkungan hidup desa.</li>
+          <li>Meningkatkan pelayanan publik yang transparan dan akuntabel.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Data Singkat Desa</h4>
+        <table class="w-full text-sm">
+          <tr><td class="py-1 font-medium">Luas Wilayah</td><td>: [xxxx] Ha</td></tr>
+          <tr><td class="py-1 font-medium">Jumlah Penduduk</td><td>: [xxxx] Jiwa</td></tr>
+          <tr><td class="py-1 font-medium">Dusun</td><td>: [x] Dusun</td></tr>
+          <tr><td class="py-1 font-medium">RT/RW</td><td>: [x]/[x]</td></tr>
+          <tr><td class="py-1 font-medium">Kode Pos</td><td>: [xxxxx]</td></tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 mt-8">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+      <div class="flex items-center space-x-2 mb-2 md:mb-0">
+        <img src="https://placehold.co/32x32" alt="Logo Pemda" class="h-8 w-8 rounded-full">
+        <span class="font-semibold">Pemerintah Kabupaten [Y]</span>
+      </div>
+      <div class="flex space-x-4 mb-2 md:mb-0">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+        <a href="#" class="hover:underline">YouTube</a>
+      </div>
+      <div class="text-sm">&copy; 2024 Desa [Nama Desa]. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
