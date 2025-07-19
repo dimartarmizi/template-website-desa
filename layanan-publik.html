@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Publik | Desa [Nama Desa]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center space-x-3">
+                <img src="https://placehold.co/48x48" alt="Logo Desa" class="h-12 w-12 rounded-full">
+                <div>
+                    <h1 class="text-xl font-bold">Desa [Nama Desa]</h1>
+                    <p class="text-sm text-gray-500">Bersama membangun desa yang mandiri dan sejahtera</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Layanan Publik -->
+    <main class="container mx-auto py-12 px-4 flex-1">
+        <h2 class="text-3xl font-bold mb-2 text-green-700">Layanan Publik Desa [Nama Desa]</h2>
+        <p class="text-gray-500 mb-6 text-base">Informasi dan kemudahan layanan publik yang tersedia untuk masyarakat desa.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-2xl font-semibold mb-4">Pengajuan Surat Online</h3>
+                <p class="mb-4">Ajukan permohonan surat keterangan, domisili, usaha, dan lainnya secara online tanpa harus datang ke kantor desa.</p>
+                <a href="#" class="bg-green-600 text-white px-5 py-2 rounded font-semibold shadow hover:bg-green-700">Ajukan Surat</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-2xl font-semibold mb-4">Data Kependudukan</h3>
+                <p class="mb-4">Lihat data kependudukan desa seperti jumlah penduduk, KK, dan statistik lainnya.</p>
+                <a href="#" class="bg-green-600 text-white px-5 py-2 rounded font-semibold shadow hover:bg-green-700">Lihat Data</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-2xl font-semibold mb-4">Jadwal Posyandu</h3>
+                <p class="mb-4">Informasi jadwal posyandu balita, lansia, dan kegiatan kesehatan lainnya di desa.</p>
+                <a href="#" class="bg-green-600 text-white px-5 py-2 rounded font-semibold shadow hover:bg-green-700">Lihat Jadwal</a>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-2xl font-semibold mb-4">Arsip Perdes</h3>
+                <p class="mb-4">Akses dokumen dan arsip peraturan desa secara digital untuk transparansi dan kemudahan informasi.</p>
+                <a href="#" class="bg-green-600 text-white px-5 py-2 rounded font-semibold shadow hover:bg-green-700">Lihat Arsip</a>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-2xl font-semibold mb-4">FAQ Layanan Publik</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li><span class="font-medium">Bagaimana cara mengajukan surat online?</span> Isi formulir pengajuan pada menu "Ajukan Surat" dan lengkapi data yang dibutuhkan.</li>
+                <li><span class="font-medium">Apakah layanan ini gratis?</span> Sebagian besar layanan desa tidak dipungut biaya, kecuali yang diatur dalam peraturan desa.</li>
+                <li><span class="font-medium">Kapan jadwal posyandu diadakan?</span> Jadwal posyandu dapat dilihat pada menu "Lihat Jadwal" atau papan pengumuman desa.</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white py-6 mt-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                <img src="https://placehold.co/32x32" alt="Logo Pemda" class="h-8 w-8 rounded-full">
+                <span class="font-semibold">Pemerintah Kabupaten [Y]</span>
+            </div>
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Facebook</a>
+                <a href="#" class="hover:underline">YouTube</a>
+            </div>
+            <div class="text-sm">&copy; 2024 Desa [Nama Desa]. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
