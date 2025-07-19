@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pengumuman | Desa [Nama Desa]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center space-x-3">
+                <img src="https://placehold.co/48x48" alt="Logo Desa" class="h-12 w-12 rounded-full">
+                <div>
+                    <h1 class="text-xl font-bold">Desa [Nama Desa]</h1>
+                    <p class="text-sm text-gray-500">Bersama membangun desa yang mandiri dan sejahtera</p>
+                </div>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex items-center px-3 py-2 border rounded text-green-700 border-green-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav class="hidden lg:flex gap-6">
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium">Kontak</a>
+            </nav>
+        </div>
+        <nav id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 hidden">
+            <div class="bg-white w-4/5 max-w-xs h-full shadow-lg p-6 flex flex-col gap-4 animate-slideInLeft">
+                <button id="menu-close" class="self-end mb-4 text-gray-700" aria-label="Tutup Menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium">Kontak</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto py-12 px-4 flex-1">
+        <nav class="mb-6 text-sm">
+            <a href="index.html" class="text-green-700 hover:underline">Beranda</a> &gt; <a href="berita-pengumuman.html" class="text-green-700 hover:underline">Berita & Pengumuman</a> &gt; <span class="text-gray-500">Detail Pengumuman</span>
+        </nav>
+        <article class="bg-white rounded shadow p-6">
+            <h2 class="text-2xl font-bold mb-2">Judul Pengumuman 1</h2>
+            <span class="text-xs text-gray-400">05 Jan 2024</span>
+            <img src="https://placehold.co/600x300" alt="Gambar Pengumuman" class="rounded my-4 w-full max-w-2xl mx-auto">
+            <p class="mb-4">Isi lengkap pengumuman penting untuk masyarakat desa. Paragraf ini dapat berisi penjelasan detail mengenai pengumuman, agenda, atau informasi penting yang perlu diketahui warga.</p>
+            <p>Paragraf tambahan untuk memperjelas isi pengumuman dan memberikan informasi yang lebih lengkap kepada pembaca.</p>
+        </article>
+    </main>
+    <footer class="bg-green-700 text-white py-6 mt-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+            <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                <img src="https://placehold.co/32x32" alt="Logo Pemda" class="h-8 w-8 rounded-full">
+                <span class="font-semibold">Pemerintah Kabupaten [Y]</span>
+            </div>
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Facebook</a>
+                <a href="#" class="hover:underline">YouTube</a>
+            </div>
+            <div class="text-sm">&copy; 2024 Desa [Nama Desa]. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
