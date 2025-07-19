@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Desa | Desa [Nama Desa]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center space-x-3">
+                <img src="https://placehold.co/48x48" alt="Logo Desa" class="h-12 w-12 rounded-full">
+                <div>
+                    <h1 class="text-xl font-bold">Desa [Nama Desa]</h1>
+                    <p class="text-sm text-gray-500">Bersama membangun desa yang mandiri dan sejahtera</p>
+                </div>
+            </div>
+            <button id="menu-toggle" class="lg:hidden flex items-center px-3 py-2 border rounded text-green-700 border-green-700 focus:outline-none" aria-label="Toggle Menu">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav class="hidden lg:flex gap-6">
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Kontak</a>
+            </nav>
+        </div>
+        <nav id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 hidden">
+            <div class="bg-white w-4/5 max-w-xs h-full shadow-lg p-6 flex flex-col gap-4 animate-slideInLeft">
+                <button id="menu-close" class="self-end mb-4 text-gray-700" aria-label="Tutup Menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <a href="index.html" class="hover:text-green-600 font-medium">Beranda</a>
+                <a href="profil.html" class="hover:text-green-600 font-medium">Profil Desa</a>
+                <a href="pemerintahan.html" class="hover:text-green-600 font-medium">Pemerintahan</a>
+                <a href="layanan-publik.html" class="hover:text-green-600 font-medium">Layanan Publik</a>
+                <a href="berita-pengumuman.html" class="hover:text-green-600 font-medium">Berita & Pengumuman</a>
+                <a href="galeri.html" class="hover:text-green-600 font-medium">Galeri</a>
+                <a href="kontak.html" class="hover:text-green-600 font-medium text-green-700 font-bold">Kontak</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto py-12 px-4 flex-1">
+        <h2 class="text-3xl font-bold mb-2 text-green-700 text-center">Kontak Desa</h2>
+        <p class="text-gray-500 mb-8 text-center text-base">Hubungi kami untuk informasi, layanan, atau keperluan administrasi desa.</p>
+        <div class="md:flex md:space-x-8 items-stretch">
+            <div class="md:w-1/2 flex flex-col gap-6">
+                <div class="bg-white rounded shadow p-6 flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Informasi Kontak</h3>
+                    <p class="mb-1">Alamat: Jl. Raya Desa No. 1, Kecamatan [X], Kabupaten [Y]</p>
+                    <p class="mb-1">Telepon: 08xx-xxxx-xxxx</p>
+                    <p class="mb-1">Email: desa@email.com</p>
+                </div>
+                <div class="bg-white rounded shadow p-6 flex-1">
+                    <h3 class="text-2xl font-bold mb-2">Lokasi Desa</h3>
+                    <iframe src="https://maps.google.com/maps?q=-7.250445,112.768845&z=15&output=embed" width="100%" height="220" class="rounded shadow" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex flex-col justify-stretch">
+                <div class="bg-white rounded shadow p-6 h-full flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2">Formulir Kontak</h3>
+                    <form class="flex-1 flex flex-col justify-between">
+                        <div class="mb-4">
+                            <label class="block mb-1 font-medium" for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" class="w-full border border-green-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-1 font-medium" for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" class="w-full border border-green-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-1 font-medium" for="pesan">Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini" class="w-full border border-green-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded font-semibold shadow hover:bg-green-800 transition">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-green-700 text-white py-6 mt-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+            <div class="flex items-center space-x-2 mb-2 md:mb-0">
+                <img src="https://placehold.co/32x32" alt="Logo Pemda" class="h-8 w-8 rounded-full">
+                <span class="font-semibold">Pemerintah Kabupaten [Y]</span>
+            </div>
+            <div class="flex space-x-4 mb-2 md:mb-0">
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">Facebook</a>
+                <a href="#" class="hover:underline">YouTube</a>
+            </div>
+            <div class="text-sm">&copy; 2024 Desa [Nama Desa]. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
