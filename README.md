@@ -1,6 +1,8 @@
 # Template Website Desa
 
 Website statis modern untuk profil, layanan, berita, dan galeri desa. Dibangun dengan HTML, CSS (Tailwind via CDN), dan JavaScript sederhana. Cocok untuk kebutuhan website desa yang informatif dan mudah dikembangkan.
+![Desa-Nama-Desa-Website-Resmi-07-19-2025_05_22_PM](https://github.com/user-attachments/assets/ada36c08-196e-4e54-9daa-771b5e0f3404)
+
 
 ## Demo
 [Demo Website](https://dimartarmizi.github.io/template-website-desa/)
